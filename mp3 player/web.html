@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mp3 Player Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="header">
+            <h1>Budget Spotify</h1>
+            <img src="picutre/logo.png" alt="Budget spotify" class="logo">
+        </div>
+        <div class="playlist">
+            <h2>Playlist</h2>
+            <ul>
+                <li onclick="playSong('dieforu')">Die For You</li>
+                <li onclick="playSong('cooldown')">Cool Down</li>
+                <li onclick="playSong('magnetic')">Magnetic</li>
+            </ul>
+        </div>
+        <div class="player">
+            <h2>Now Playing:</h2>
+            <div class="song-info">
+                <p id="song-title">Select a song to play:</p>
+                <img src="" alt="Now Playing" id="song-image">
+            </div>
+            <div class="audio-controls">
+                <audio controls id="audio-player">
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="time">
+                    <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                </div>
+            </div>
+        </div>
+        
+    <script src="jsgamay.js"></script>
+</body>
+</html>
