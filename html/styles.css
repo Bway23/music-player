@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #5e7ecf, #233252);
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #B0D4E3;
+}
+
+.cd-container {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cd {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #D1DCE3;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Spinning CD Animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
